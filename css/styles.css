@@ -15,8 +15,12 @@ body {
 }
 
 .calculator-display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
     width: 12rem;
-    height: 2.5rem;
+    height: 4.5rem;
     background-color: #fdf6ff;
     font-size: 2rem;
     text-align: end;
@@ -71,10 +75,24 @@ button:active {
     border-radius: 5px;
     width: 5rem;
     padding: 0.2rem;
-    margin: 0 0.4rem 1rem 0.6rem;
+    margin: 0.7rem 0.4rem 0.6rem 0.4rem;
    
 }
 
 #clear:hover {
     background-color: #b59eba; 
 }
+
+#delete {
+    background-color: rgb(196, 167, 245);
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 5rem;
+    padding: 0.2rem;
+    margin: 0.7rem 0.4rem 0.6rem 0.4rem;
+}
+
+#delete:hover {
+    background-color: #b59eba; 
+}
+
